@@ -12,11 +12,8 @@ $(document).ready(function() {
     });
     
     $('#addnode').click(function() {
-        //var name = prompt("enter node id", "node");
-        var name = "name";
-        for (var i=0; i<100; i++) {
-            graph.newNode({label: name + i});
-        };
+        var name = prompt("enter node id", "node");
+        graph.newNode({label: name});
     });
     
     $('#addedge').click(function() {
